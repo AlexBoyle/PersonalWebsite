@@ -1,22 +1,21 @@
 {
-	"name": "606Climbing",
+	"name": "Personal Website",
 	"version": "0.0.1",
 	"private": true,
 	"dependencies": {
-		"@emotion/react": "^11.10.6",
-		"@emotion/styled": "^11.10.6",
-		"@mui/material": "^5.11.16",
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^13.4.0",
-		"@testing-library/user-event": "^13.5.0",
-		"prettier": "^2.8.7",
-		"react": "^18.2.0",
-		"react-device-detect": "^2.2.3",
-		"react-dom": "^18.2.0",
-		"react-icons": "^4.8.0",
-		"react-router-dom": "^6.10.0",
-		"react-scripts": "^3.0.1",
-		"styled-components": "^5.3.9"
+		"@emotion/react": "latest",
+		"@emotion/styled": "latest",
+		"@mui/material": "latest",
+		"@testing-library/jest-dom": "latest",
+		"@testing-library/react": "latest",
+		"@testing-library/user-event": "latest",
+		"prettier": "latest",
+		"react": "latest",
+		"react-device-detect": "latest",
+		"react-dom": "latest",
+		"react-icons": "latest",
+		"react-router-dom": "latest",
+		"styled-components": "latest"
 	},
 	"scripts": {
 		"start": "react-scripts start",
@@ -44,6 +43,6 @@
 		]
 	},
 	"devDependencies": {
-		"prettier": "2.8.7"
+		"prettier": "latest"
 	}
 }
