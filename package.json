@@ -15,6 +15,7 @@
 		"react-dom": "latest",
 		"react-icons": "latest",
 		"react-router-dom": "latest",
+		"react-scripts": "^5.0.1",
 		"styled-components": "latest"
 	},
 	"scripts": {
