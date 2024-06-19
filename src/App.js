@@ -7,15 +7,12 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
 	return (
-		<div className="App">
+		<div className="PageWrapper">
 			<Router>
-				<Header />
-				<div style={{ maxWidth: "1000px", margin: "auto", overflow: "hidden" }}>
-					<Routes>
-						<Route path="/" exact element={<Home />} />
-						<Route path="/*" element={<ExamplePage />} />
-					</Routes>
-				</div>
+				<Routes>
+					<Route path="/" exact element={<Home />} />
+					<Route path="/*" element={<ExamplePage />} />
+				</Routes>
 			</Router>
 		</div>
 	);

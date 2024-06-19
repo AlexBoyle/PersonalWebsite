@@ -1,0 +1,20 @@
+.NavigationButton {
+    font-size: 22px;
+    height: 32px;
+    color: grey;
+    transition: all 0.5s ease 0s;
+    font-family: "Roboto Mono", monospace;
+}
+.NavigationButton:hover {
+    color: white;
+    font-size: 24px;
+}
+.NavigationButtonSelected {
+    color: green !important;
+    font-size: 24px;
+}
+.navBar {
+    position: sticky;
+    height: calc(-32px + 100vh);
+    top: 0px;
+}

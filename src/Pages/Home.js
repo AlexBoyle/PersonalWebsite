@@ -1,16 +1,22 @@
 import React from "react";
 import "./Home.css";
-function ExamplePage() {
+import Sections from "../Components/Section/Sections";
+import NavigationButtonContainer from "../Components/Nav/NavigationButtonContainer"
+function HomePage() {
+	let sectionNames = Object.keys(Sections)
+
 	return (
 		<>
-			<div className="bg" style={{ height: "500px" }}></div>
-			<h1>a</h1>
-			<div>
-				a
+			<div className="mainContent">
+				<NavigationButtonContainer sectionNames={sectionNames}></NavigationButtonContainer>
+				<div className="contentBody">
+					{sectionNames.map(name => Sections[name])}
+				</div>
+
 			</div>
-			<br />
+
 		</>
 	);
 }
 
-export default ExamplePage;
+export default HomePage;

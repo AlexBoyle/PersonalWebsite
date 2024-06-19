@@ -1,1 +1,21 @@
+.mainContent {
+    min-height: 100%;
+    width: 100%;
+    max-width: 75rem;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 142px;
+    
+}
 
+.contentBody {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    gap: 16px;
+}
