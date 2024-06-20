@@ -8,7 +8,10 @@ function HomePage() {
 	return (
 		<>
 			<div className="mainContent">
-				<NavigationButtonContainer sectionNames={sectionNames}></NavigationButtonContainer>
+					
+				<NavigationButtonContainer sectionNames={sectionNames}>
+					<img className="profileImg" src="/images/ProfilePic.jpg" />
+				</NavigationButtonContainer>
 				<div className="contentBody">
 					{sectionNames.map(name => Sections[name])}
 				</div>

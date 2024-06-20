@@ -1,4 +1,4 @@
-.section {
+.test {
     width: 100%;
     height: calc(-32px + 100vh);
     -webkit-box-align: center;
@@ -12,22 +12,7 @@
     -webkit-box-pack: center;
     justify-content: center;
 }
-.box1 {
-    width: 100%;
-    height: calc(-32px + 100vh);
-    -webkit-box-align: center;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.25s ease 0s;
-    margin-bottom: 48px;
-    scroll-snap-align: start;
-    display: flex;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
-}
-
-.box2 {
+.box {
     max-height: 848px;
     max-width: 1040px;
     height: 100%;

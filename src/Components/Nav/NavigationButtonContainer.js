@@ -5,11 +5,16 @@ let NavigationButtonContainer = function (props) {
 
 
 
-    return <>
+    return <div>
         <div className="navBar">
-            {props?.sectionNames?.map(name => (<NavigationButton name={name}></NavigationButton>))}
+            <div className="navB">
+                {props?.children}
+                <div className="buttonContainer">
+                    {props?.sectionNames?.map(name => (<NavigationButton name={name}></NavigationButton>))}
+                </div>
+            </div>
         </div>
-    </>
+    </div>
 
 }
 export default NavigationButtonContainer;
