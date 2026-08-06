@@ -13,7 +13,7 @@ function HomePage() {
 					<img className="profileImg" src="/images/ProfilePic.jpg" />
 				</NavigationButtonContainer>
 				<div className="contentBody">
-					{sectionNames.map(name => Sections[name])}
+					{sectionNames.map((name, i) => Sections[name])}
 				</div>
 
 			</div>

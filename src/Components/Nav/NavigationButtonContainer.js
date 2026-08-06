@@ -10,7 +10,7 @@ let NavigationButtonContainer = function (props) {
             <div className="navB">
                 {props?.children}
                 <div className="buttonContainer">
-                    {props?.sectionNames?.map(name => (<NavigationButton name={name}></NavigationButton>))}
+                    {props?.sectionNames?.map(name => (<NavigationButton name={name} key={name}></NavigationButton>))}
                 </div>
             </div>
         </div>
