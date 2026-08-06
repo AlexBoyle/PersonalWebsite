@@ -1,24 +1,13 @@
 import React from "react";
 import "./Home.css";
-import Sections from "../Components/Section/Sections";
-import NavigationButtonContainer from "../Components/Nav/NavigationButtonContainer"
+
 function HomePage() {
-	let sectionNames = Object.keys(Sections)
-
 	return (
-		<>
-			<div className="mainContent">
-					
-				<NavigationButtonContainer sectionNames={sectionNames}>
-					<img className="profileImg" src="/images/ProfilePic.jpg" />
-				</NavigationButtonContainer>
-				<div className="contentBody">
-					{sectionNames.map((name, i) => Sections[name])}
-				</div>
-
-			</div>
-
-		</>
+		<div className="homeHero">
+			<img className="profileImg" src="/images/ProfilePic.jpg" alt="Alex Boyle" />
+			<h1>Alex Boyle</h1>
+			<p className="tagline">Software Engineer &mdash; Chicago, IL</p>
+		</div>
 	);
 }
 

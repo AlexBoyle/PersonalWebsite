@@ -4,33 +4,37 @@ import "./Experience.css";
 export default function Experience(props) {
 	const [experienceData, setExperienceData] = React.useState([]);
 	React.useEffect(() => {
-		const xhr = new XMLHttpRequest();
-		xhr.open('GET', '/data/experience.json');
-		xhr.onload = function () {
-			if (xhr.status === 200) {
-				console.log(JSON.parse(xhr.responseText))
-				setExperienceData(JSON.parse(xhr.responseText));
-			}
-		};
-		xhr.send();
+		fetch("/data/experience.json")
+			.then((res) => res.json())
+			.then((data) => setExperienceData(data));
 	}, []);
 
-	let parseTime = React.useCallback((timeArr) => {
-		return "temp"
-	})
-
 	return (
-		<div>
-			{experienceData.map((experience, i) =>
-				<div key={"experience-" + i}>
-					<div>{experience.position}</div>
-					<div>{experience.company}</div>
-					<div>{parseTime(experience.time)}</div>
-					
+		<div className="experienceList">
+			{experienceData.map((experience, i) => (
+				<div className="experienceEntry" key={"experience-" + i}>
+					<div className="experienceHeader">
+						<div className="experiencePosition">{experience.position}</div>
+						<div className="experienceDate">{experience.date}</div>
+					</div>
+					<div className="experienceSubHeader">
+						<div className="experienceCompany">{experience.company}</div>
+						<div className="experienceLocation">{experience.location}</div>
+					</div>
+					{experience.desc?.map((d, j) => (
+						<div className="experienceDesc" key={"desc-" + j}>
+							<div className="experienceDescName">{d.name}</div>
+							{d.points && (
+								<ul className="experienceDescPoints">
+									{d.points.map((p, k) => (
+										<li key={"point-" + k}>{p}</li>
+									))}
+								</ul>
+							)}
+						</div>
+					))}
 				</div>
-			
-			)}
+			))}
 		</div>
-			
 	);
-};
+}

@@ -2,10 +2,8 @@ import React from "react";
 import {
 	Nav,
 	NavLink,
-	Bars,
+	NavAnchor,
 	NavMenu,
-	NavBtn,
-	NavBtnLink,
 } from "./HeaderElements";
 
 function Header() {
@@ -14,6 +12,8 @@ function Header() {
 			<Nav>
 				<NavMenu>
 					<NavLink to="/">Home</NavLink>
+					<NavLink to="/experience">Experience</NavLink>
+					<NavAnchor href="/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</NavAnchor>
 				</NavMenu>
 			</Nav>
 		</>

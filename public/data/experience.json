@@ -1,59 +1,66 @@
 [
 	{
-		"position": "Software Engineer I",
-		"company": "CME Group",
-		"img": "",
+		"position": "Software Consultant",
+		"company": "Alex Boyle LLC",
 		"location": "Chicago, IL",
-		"date": "Jun 2019 - Present",
-		"time": ["2019-06-01"],
+		"date": "Jul 2026 - Present",
+		"time": ["2026-07-01"],
 		"desc": [
 			{
-				"name": "Technologies Used: Java/Spring, Node, JavaScript, Chef, Jenkins, Bash"
-			}
-
-		]
-	},
-	{
-		"position": "Teaching Assistant",
-		"company": "Northern Illinois University",
-		"img": "niu.png",
-		"location": "DeKalb, IL",
-		"date": "Jan 2019 - May 2019",
-		"time": ["2016-04-01","2018-05-01"],
-		"desc": [
-			{
-				"name": "Technologies Used: Unix, C++, Blackboard"
+				"name": "Independent consultant writing scripts and systems for clients"
 			},
 			{
-				"name": "Responsibilities:",
+				"name": "Weather Data Management Platform | Client: Murray & Trettel, Inc. (meteorological consulting, Buffalo Grove, IL)",
 				"points": [
-					"Hold Office hours to assist students with class material",
-					"Grade all course assignments"
+					"Built full-stack replacement (React, Flask, MongoDB) for a legacy Fortran-based reporting system used for nuclear power plant sites",
+					"Ingests and manages hourly data collected from physical meteorological towers; fully configurable for new site onboarding, with automated daily printout generation",
+					"Ported NRC-compliance report generation (JFT, XOQDOQ, PAVAN) from Fortran/Perl to Python"
 				]
 			}
 		]
 	},
 	{
-		"position": "Campus Innovator",
-		"company": "Discover Financial Services",
-		"img": "niu.png",
-		"location": "DeKalb, IL",
-		"date": "Aug 2018 - May 2019",
-		"time":["2016-04-01", "2018-05-01"],
+		"position": "Software Engineer",
+		"company": "Capital One",
+		"location": "Chicago, IL",
+		"date": "Jun 2022 - Present",
+		"time": ["2022-06-01"],
 		"desc": [
 			{
-				"name": "Technologies Used: Github, AWS, NodeJS, AngularJS, Spring"
+				"name": "Technologies Used: React, CloudFront, Java, Spring, ECS, Nginx, Redis, Postgres, Barracuda, AWS, Auth0, New Relic, Snowflake"
 			},
 			{
 				"name": "Responsibilities:",
 				"points": [
-					"Set up and maintain AWS containers to provide a useful CI pipeline for a Vendor Tracking Application"
+					"Architected the migration of the Capital One Partner Portal (COPP) from a monolithic ECS service to a decoupled CloudFront/ECS architecture with zero user disruption; authored the technical design doc and secured buy-in across multiple levels of management",
+					"Own the technical architecture of COPP: a React front end on CloudFront, a Java/Spring backend and Nginx router on ECS, a Redis cache, and a Postgres database behind a Barracuda firewall, fully hosted on AWS",
+					"Leading the architectural migration of COPP into a micro frontend within a larger React application, defining the integration pattern for the broader platform",
+					"Serve as the technical point of contact across upstream data teams and the QuickSight/Tableau/ThoughtSpot platform teams, aligning architecture and integration decisions for reporting delivered via Tableau, QuickSight, and RStudio/Posit",
+					"Designed and implemented Auth0-based authentication for partners, replacing legacy SSO, then re-architected it for the new micro frontend",
+					"Planned and led a lift-and-shift migration of the application and its data to a new AWS account, minimizing downtime and data-integrity risk",
+					"Established an observability strategy with multiple New Relic synthetic monitors to proactively detect service outages; has caught multiple real incidents",
+					"Automated data-integrity validation with a scheduled AWS Lambda that checks upstream report generation and Snowflake table integrity"
 				]
+			}
+		]
+	},
+	{
+		"position": "Software Engineer",
+		"company": "CME Group",
+		"location": "Chicago, IL",
+		"date": "Jun 2019 - Jun 2022",
+		"time": ["2019-06-01", "2022-06-01"],
+		"desc": [
+			{
+				"name": "Technologies Used: Java, JSP, SQL"
 			},
 			{
-				"name": "Projects:",
+				"name": "Responsibilities:",
 				"points": [
-					"Developed a system to track and organize thousands of third party interactions"
+					"Worked in the clearing house on a Java/JSP application (internal servers, SQL database) that processed end-of-day collateral and collateral movement for large trading partners",
+					"Implemented SWIFT wire generation in accordance with ISO 20022 and ISO 15022",
+					"Led the re-architecture of end-of-day processing to a multithreaded model, resolving timing failures as processing outgrew its batch window",
+					"Extended the application to accept gold bullion as collateral, integrating trader-held certificates into collateral totals"
 				]
 			}
 		]
@@ -61,55 +68,93 @@
 	{
 		"position": "Software Engineer Intern",
 		"company": "CDK Global",
-		"img": "niu.png",
 		"location": "Hoffman Estates, IL",
 		"date": "Jun 2018 - Aug 2018",
-		"time":["2016-04-01", "2018-05-01"],
+		"time": ["2018-06-01", "2018-08-01"],
 		"desc": [
 			{
-				"name": "Technologies Used: AngularJS, Typescript, ASP.NET, Bitbucket"
+				"name": "Technologies Used: AngularJS, TypeScript, ASP.NET, Bitbucket"
 			},
 			{
 				"name": "Responsibilities:",
 				"points": [
-					"Improved and updated CDK\"s flagship CRM product that is used by thousands of companies across North America",
-					"Identified workflow issues in CDK\"s CRM And present possible fixes within a two week sprint cycle"
+					"Improved and updated CDK's flagship CRM product, used by thousands of companies across North America",
+					"Identified workflow issues in CDK's CRM and presented possible fixes within a two-week sprint cycle"
 				]
 			},
 			{
 				"name": "Projects:",
 				"points": [
-					"Integrated an OEM\"s APIs into CDK\"s CRM to allow clients to look up financing options",
+					"Integrated an OEM's APIs into CDK's CRM to allow clients to look up financing options",
 					"Standardized visual components to reduce the amount of time spent creating or fixing pages"
 				]
 			}
 		]
 	},
 	{
-		"position": "Application Developer",
+		"position": "Teaching Assistant, Principles of Operating Systems",
 		"company": "Northern Illinois University",
-		"img": "niu.png",
+		"location": "DeKalb, IL",
+		"date": "Jan 2019 - May 2019",
+		"time": ["2019-01-01", "2019-05-01"],
+		"desc": [
+			{
+				"name": "Responsibilities:",
+				"points": [
+					"Held office hours to assist students with class material",
+					"Graded all course assignments"
+				]
+			}
+		]
+	},
+	{
+		"position": "Campus Innovator",
+		"company": "Discover Financial Services",
+		"location": "DeKalb, IL",
+		"date": "Aug 2018 - May 2019",
+		"time": ["2018-08-01", "2019-05-01"],
+		"desc": [
+			{
+				"name": "Technologies Used: GitHub, AWS, NodeJS, AngularJS, Spring"
+			},
+			{
+				"name": "Responsibilities:",
+				"points": [
+					"Set up and maintained AWS containers to provide a CI pipeline for a Vendor Tracking Application"
+				]
+			},
+			{
+				"name": "Projects:",
+				"points": [
+					"Developed a system to track and organize thousands of third-party interactions"
+				]
+			}
+		]
+	},
+	{
+		"position": "Software Engineer",
+		"company": "Northern Illinois University",
 		"location": "DeKalb, IL",
 		"date": "Apr 2016 - May 2018",
 		"time": ["2016-04-01", "2018-05-01"],
 		"desc": [
 			{
-				"name": "Technologies Used: AngularJS, ThreeJS, Python, PHP, Docker, Fiddler, Gitlab"
+				"name": "Technologies Used: AngularJS, ThreeJS, Python, PHP, Docker, Fiddler, GitLab"
 			},
 			{
 				"name": "Responsibilities:",
 				"points": [
 					"Developed new features defined by the housing department to better their workflows",
 					"Worked on updating and supporting legacy applications that support front desk staff",
-					"Looked into user reported bugs and come up with solutions or patches within a day"
+					"Looked into user-reported bugs and came up with solutions or patches within a day"
 				]
 			},
 			{
 				"name": "Projects:",
 				"points": [
-					"Wrapped NIU\"s desking services into Docker containers to create their first automated CI pipeline",
-					"Developed an user auditing tool to help managers file reports and prevent system abuse by front desk staff",
-					"Rewrote backup scripts to run about 50% faster which resulted in a more reliable backup system",
+					"Wrapped NIU's desking services into Docker containers to create their first automated CI pipeline",
+					"Developed a user auditing tool to help managers file reports and prevent system abuse by front desk staff",
+					"Rewrote backup scripts to run about 50% faster, resulting in a more reliable backup system",
 					"Assisted in the development of an application that rendered student living spaces in three dimensions"
 				]
 			}

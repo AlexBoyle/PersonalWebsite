@@ -1,20 +1,67 @@
-.test {
-    width: 100%;
-    height: calc(-32px + 100vh);
-    -webkit-box-align: center;
-    align-items: center;
-    overflow: hidden;
-    transition: all 0.25s ease 0s;
-    margin-bottom: 48px;
-    scroll-snap-align: start;
+.experienceList {
     display: flex;
     flex-direction: column;
-    -webkit-box-pack: center;
-    justify-content: center;
 }
-.box {
-    max-height: 848px;
-    max-width: 1040px;
-    height: 100%;
-    width: 100%;
+
+.experienceEntry {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 24px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.experienceEntry:first-child {
+    padding-top: 0;
+}
+
+.experienceEntry:last-child {
+    border-bottom: none;
+}
+
+.experienceHeader,
+.experienceSubHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.experiencePosition {
+    font-weight: 600;
+    font-size: 1.15rem;
+    color: var(--color-text);
+}
+
+.experienceCompany {
+    color: var(--color-accent);
+    font-weight: 500;
+}
+
+.experienceDate,
+.experienceLocation {
+    color: var(--color-text-tertiary);
+    font-size: 0.9rem;
+    white-space: nowrap;
+}
+
+.experienceDesc {
+    margin-top: 12px;
+}
+
+.experienceDescName {
+    color: var(--color-text-secondary);
+    font-weight: 500;
+}
+
+.experienceDescPoints {
+    margin: 6px 0 0 0;
+    padding-left: 20px;
+    color: var(--color-text-secondary);
+}
+
+.experienceDescPoints li {
+    margin-bottom: 4px;
+    line-height: 1.5;
 }
