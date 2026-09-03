@@ -1,0 +1,240 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+    \uline{\phantom{#1}}%
+    \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\usepackage{tgheros}
+\renewcommand*\familydefault{\sfdefault}
+%% Only if the base font of the document is to be sans serif
+\usepackage[T1]{fontenc}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+    \item\small{
+            {#1 \vspace{-1pt}}
+    }
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+        \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        #1 & {\color{dark-grey}} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+\textbf{\Huge Alex Boyle} \\ \vspace{5pt}
+\small \faPhone* \texttt{[PHONE]} \hspace{1pt} $|$
+\hspace{1pt} \faEnvelope \hspace{2pt} \texttt{[EMAIL]} \hspace{1pt} $|$
+\hspace{1pt} \faLinkedin \hspace{2pt} \href{https://www.linkedin.com/in/-alexboyle/}{\myuline{-alexboyle}} \hspace{1pt} $|$
+\hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/AlexBoyle}{\myuline{AlexBoyle}} \hspace{1pt} $|$
+\hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Chicago, IL}
+\\ \vspace{-3pt}
+\end{center}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Alex Boyle LLC}{Jul. 2025 -- Present $\cdot$ 1 yr 3 mos}
+{Software Consultant}{Chicago, IL}
+\resumeItemListStart
+\resumeItem{\textbf{Weather Data Management Platform} $|$ Client: Murray \& Trettel, Inc. (meteorological consulting, Buffalo Grove, IL)}
+\resumeItemListStart
+\resumeItem{Built full-stack replacement (\textbf{React}, \textbf{Flask}, \textbf{MongoDB}) for a legacy \textbf{Fortran}-based reporting system used for nuclear power plant sites}
+\resumeItem{Ingests and manages hourly data collected from physical meteorological towers; fully configurable for new site onboarding, with automated daily printout generation}
+\resumeItem{Ported NRC-compliance report generation (JFT, XOQDOQ, PAVAN) from \textbf{Fortran}/\textbf{Perl} to \textbf{Python}}
+\resumeItemListEnd
+\resumeItemListEnd
+
+\resumeSubheading
+{Capital One}{Jun. 2022 -- Present $\cdot$ 4 yrs 4 mos}
+{Software Engineer}{Chicago, IL}
+\resumeItemListStart
+\resumeItem{Architected the migration of the Capital One Partner Portal (COPP) from a monolithic \textbf{ECS} service to a decoupled \textbf{CloudFront}/\textbf{ECS} architecture with zero user disruption; authored the technical design doc and secured buy-in across multiple levels of management}
+\resumeItem{Own the technical architecture of COPP: a \textbf{React} front end on \textbf{CloudFront}, a \textbf{Java}/\textbf{Spring} backend and \textbf{Nginx} router on \textbf{ECS}, a \textbf{Redis} cache, and a \textbf{Postgres} database behind a \textbf{Barracuda} firewall, fully hosted on \textbf{AWS}}
+\resumeItem{Leading the architectural migration of COPP into a micro frontend within a larger \textbf{React} application, defining the integration pattern for the broader platform}
+\resumeItem{Serve as the technical point of contact across upstream data teams and the QuickSight/Tableau/ThoughtSpot platform teams, aligning architecture and integration decisions for reporting delivered via \textbf{Tableau}, \textbf{QuickSight}, and \textbf{RStudio}/Posit}
+\resumeItem{Designed and implemented \textbf{Auth0}-based authentication for partners, replacing legacy SSO, then re-architected it for the new micro frontend}
+\resumeItem{Planned and led a lift-and-shift migration of the application and its data to a new \textbf{AWS} account, minimizing downtime and data-integrity risk}
+\resumeItem{Established an observability strategy with multiple \textbf{New Relic} synthetic monitors to proactively detect service outages; has caught multiple real incidents}
+\resumeItem{Automated data-integrity validation with a scheduled \textbf{AWS Lambda} that checks upstream report generation and \textbf{Snowflake} table integrity}
+\resumeItemListEnd
+
+\resumeSubheading
+{CME Group}{Jun. 2019 -- Jun. 2022 $\cdot$ 3 yrs 1 mo}
+{Software Engineer}{Chicago, IL}
+\resumeItemListStart
+\resumeItem{Worked in the clearing house on a \textbf{Java}/\textbf{JSP} application (internal servers, \textbf{SQL} database) that processed end-of-day collateral and collateral movement for large trading partners}
+\resumeItem{Implemented SWIFT wire generation in accordance with \textbf{ISO 20022} and \textbf{ISO 15022}}
+\resumeItem{Led the re-architecture of end-of-day processing to a multithreaded model, resolving timing failures as processing outgrew its batch window}
+\resumeItem{Extended the application to accept gold bullion as collateral, integrating trader-held certificates into collateral totals}
+\resumeItemListEnd
+
+\resumeSubheading
+{CDK Global}{Jun. 2018 -- Aug. 2018 $\cdot$ 3 mos}
+{Software Engineer Intern}{Hoffman Estates, IL}
+
+\resumeSubheading
+{Northern Illinois University}{Jan. 2019 -- May 2019 $\cdot$ 5 mos}
+{Teaching Assistant, Principles of Operating Systems}{DeKalb, IL}
+
+\resumeSubheading
+{Discover Financial Services}{Aug. 2018 -- May 2019 $\cdot$ 10 mos}
+{Software Engineer Intern}{DeKalb, IL}
+
+\resumeSubheading
+{Northern Illinois University}{Apr. 2016 -- May 2018 $\cdot$ 2 yrs 2 mos}
+{Software Engineer}{DeKalb, IL}
+
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+
+\section{PROJECTS}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{Custom Game Engine} (\textbf{C\#}, \textbf{MonoGame}, \textbf{HLSL}, \textbf{Vulkan})} {}
+\resumeItemListStart
+\resumeItem{Architected and developed a custom 2D game engine with a fully shader-driven rendering pipeline, real-time mesh generation, and multithreaded simulation systems}
+\resumeItem{Evaluated \textbf{marching squares} as an approach to procedural mesh generation}
+\resumeItem{Authored \textbf{HLSL} shaders and migrated the rendering pipeline from \textbf{DirectX} to \textbf{OpenGL} before adopting a \textbf{Vulkan} backend for cross-platform compatibility and maintainability}
+\resumeItem{Emphasizes modular engine architecture, GPU programming, and performance optimization}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{SKILLS}
+\begin{itemize}[leftmargin=0in, label={}]
+\small{\item{
+\textbf{Languages} {: Java, Python, JavaScript, SQL, C\#}\vspace{2pt} \\
+\textbf{Frameworks} {: React, Spring, Flask}\vspace{2pt} \\
+\textbf{Cloud/Infra} {: AWS (Lambda, ECS, CloudFront), MongoDB, Postgres, Redis, Snowflake, Nginx, Barracuda}\vspace{2pt} \\
+\textbf{BI/Dashboarding} {: Tableau, QuickSight, RStudio/Posit, ThoughtSpot}\vspace{2pt} \\
+\textbf{Other} {: Auth0, New Relic}
+}}
+\end{itemize}
+
+
+%-----------EDUCATION-----------
+\section {EDUCATION}
+\resumeSubHeadingListStart
+\resumeItem{Computer Science --- Northern Illinois University}
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

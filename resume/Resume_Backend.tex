@@ -144,44 +144,46 @@
 \resumeSubHeadingListStart
 
 \resumeSubheading
-{Alex Boyle LLC}{Jul. 2026 -- Present $\cdot$ 1 mo}
+{Alex Boyle LLC}{Jul. 2025 -- Present $\cdot$ 1 yr 3 mos}
 {Software Consultant}{Chicago, IL}
 \resumeItemListStart
 \resumeItem{\textbf{Weather Data Management Platform} $|$ Client: Murray \& Trettel, Inc. (meteorological consulting, Buffalo Grove, IL)}
 \resumeItemListStart
-\resumeItem{Built full-stack replacement (\textbf{React}, \textbf{Flask}, \textbf{MongoDB}) for a legacy \textbf{Fortran}-based reporting system used for nuclear power plant sites}
-\resumeItem{Ingests and manages hourly data collected from physical meteorological towers; fully configurable for new site onboarding, with automated daily printout generation}
+\resumeItem{Designed and built the backend for a full-stack replacement of a legacy \textbf{Fortran}-based weather reporting system used for nuclear power plant sites, built on \textbf{Flask} and \textbf{MongoDB}}
+\resumeItem{Built the data ingestion pipeline for hourly readings from physical meteorological towers, fully configurable for new site onboarding, with automated daily report generation}
 \resumeItem{Ported NRC-compliance report generation (JFT, XOQDOQ, PAVAN) from \textbf{Fortran}/\textbf{Perl} to \textbf{Python}}
 \resumeItemListEnd
 \resumeItemListEnd
 
 \resumeSubheading
-{Capital One}{Jun. 2022 -- Present $\cdot$ 4 yrs 3 mos}
+{Capital One}{Jun. 2022 -- Present $\cdot$ 4 yrs 4 mos}
 {Software Engineer}{Chicago, IL}
 \resumeItemListStart
-\resumeItem{Architected the migration of the Capital One Partner Portal (COPP) from a monolithic \textbf{ECS} service to a decoupled \textbf{CloudFront}/\textbf{ECS} architecture with zero user disruption; authored the technical design doc and secured buy-in across multiple levels of management}
-\resumeItem{Own the technical architecture of COPP: a \textbf{React} front end on \textbf{CloudFront}, a \textbf{Java}/\textbf{Spring} backend and \textbf{Nginx} router on \textbf{ECS}, a \textbf{Redis} cache, and a \textbf{Postgres} database behind a \textbf{Barracuda} firewall, fully hosted on \textbf{AWS}}
-\resumeItem{Leading the architectural migration of COPP into a micro frontend within a larger \textbf{React} application, defining the integration pattern for the broader platform}
-\resumeItem{Serve as the technical point of contact across upstream data teams and the QuickSight/Tableau/ThoughtSpot platform teams, aligning architecture and integration decisions for reporting delivered via \textbf{Tableau}, \textbf{QuickSight}, and \textbf{RStudio}/Posit}
-\resumeItem{Designed and implemented \textbf{Auth0}-based authentication for partners, replacing legacy SSO, then re-architected it for the new micro frontend}
+\resumeItem{Architected the migration of the Capital One Partner Portal (COPP) backend from a monolithic \textbf{ECS} service to a decoupled \textbf{CloudFront}/\textbf{ECS} architecture with zero user disruption; authored the technical design doc and secured buy-in across multiple levels of management}
+\resumeItem{Owned the backend architecture of COPP: a \textbf{Java}/\textbf{Spring} API and \textbf{Nginx} router on \textbf{ECS}, a \textbf{Redis} cache, and a \textbf{Postgres} database behind a \textbf{Barracuda} firewall, fully hosted on \textbf{AWS}, serving a \textbf{React} front end on \textbf{CloudFront}}
+\resumeItem{Designed and implemented \textbf{Auth0}-based authentication and authorization for partners, replacing legacy SSO, then re-architected the integration for a new micro front end}
 \resumeItem{Planned and led a lift-and-shift migration of the application and its data to a new \textbf{AWS} account, minimizing downtime and data-integrity risk}
-\resumeItem{Established an observability strategy with multiple \textbf{New Relic} synthetic monitors to proactively detect service outages; has caught multiple real incidents}
 \resumeItem{Automated data-integrity validation with a scheduled \textbf{AWS Lambda} that checks upstream report generation and \textbf{Snowflake} table integrity}
+\resumeItem{Established an observability strategy with multiple \textbf{New Relic} synthetic monitors to proactively detect service outages, which have caught multiple real incidents}
+\resumeItem{Partnered with the BI team to build a \textbf{REST API} layer on top of \textbf{QuickSight}, serving as the access-controlled entry point and gate for internal applications creating and updating \textbf{QuickSight} boards}
 \resumeItemListEnd
 
 \resumeSubheading
 {CME Group}{Jun. 2019 -- Jun. 2022 $\cdot$ 3 yrs 1 mo}
 {Software Engineer}{Chicago, IL}
 \resumeItemListStart
-\resumeItem{Worked in the clearing house on a \textbf{Java}/\textbf{JSP} application (internal servers, \textbf{SQL} database) that processed end-of-day collateral and collateral movement for large trading partners}
-\resumeItem{Implemented SWIFT wire generation in accordance with \textbf{ISO 20022} and \textbf{ISO 15022}}
-\resumeItem{Led the re-architecture of end-of-day processing to a multithreaded model, resolving timing failures as processing outgrew its batch window}
+\resumeItem{Worked in the clearing house on a \textbf{Java}/\textbf{JSP} backend (internal servers, \textbf{SQL} database) that processed end-of-day collateral and collateral movement for large trading partners}
+\resumeItem{Led the re-architecture of end-of-day processing to a \textbf{multithreaded} model, resolving timing failures as processing outgrew its batch window}
+\resumeItem{Implemented SWIFT wire generation in accordance with \textbf{ISO 20022} and \textbf{ISO 15022} messaging standards}
 \resumeItem{Extended the application to accept gold bullion as collateral, integrating trader-held certificates into collateral totals}
 \resumeItemListEnd
 
 \resumeSubheading
 {CDK Global}{Jun. 2018 -- Aug. 2018 $\cdot$ 3 mos}
 {Software Engineer Intern}{Hoffman Estates, IL}
+\resumeItemListStart
+\resumeItem{Integrated a third-party OEM's API into CDK's flagship CRM, used by thousands of dealerships across North America, to let clients look up financing options}
+\resumeItemListEnd
 
 \resumeSubheading
 {Northern Illinois University}{Jan. 2019 -- May 2019 $\cdot$ 5 mos}
@@ -190,10 +192,18 @@
 \resumeSubheading
 {Discover Financial Services}{Aug. 2018 -- May 2019 $\cdot$ 10 mos}
 {Software Engineer Intern}{DeKalb, IL}
+\resumeItemListStart
+\resumeItem{Set up and maintained \textbf{AWS} containers to provide a \textbf{CI} pipeline for a vendor-tracking application}
+\resumeItemListEnd
 
 \resumeSubheading
 {Northern Illinois University}{Apr. 2016 -- May 2018 $\cdot$ 2 yrs 2 mos}
 {Software Engineer}{DeKalb, IL}
+\resumeItemListStart
+\resumeItem{Wrapped NIU's desking services in \textbf{Docker} containers to build the department's first automated \textbf{CI} pipeline}
+\resumeItem{Rewrote backup scripts to run \textasciitilde50\% faster, improving the reliability of the backup system}
+\resumeItem{Developed a user-auditing tool to help managers file reports and prevent system abuse by front-desk staff}
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
@@ -205,10 +215,9 @@
 \resumeProjectHeading
 {\textbf{Custom Game Engine} (\textbf{C\#}, \textbf{MonoGame}, \textbf{HLSL}, \textbf{Vulkan})} {}
 \resumeItemListStart
-\resumeItem{Architected and developed a custom 2D game engine with a fully shader-driven rendering pipeline, real-time mesh generation, and multithreaded simulation systems}
-\resumeItem{Evaluated \textbf{marching squares} as an approach to procedural mesh generation}
+\resumeItem{Architected and developed a custom 2D game engine, with an emphasis on modular systems architecture and \textbf{multithreaded} simulation}
+\resumeItem{Built real-time procedural mesh generation, evaluating \textbf{marching squares} as one approach}
 \resumeItem{Authored \textbf{HLSL} shaders and migrated the rendering pipeline from \textbf{DirectX} to \textbf{OpenGL} before adopting a \textbf{Vulkan} backend for cross-platform compatibility and maintainability}
-\resumeItem{Emphasizes modular engine architecture, GPU programming, and performance optimization}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -220,11 +229,11 @@
 \section{SKILLS}
 \begin{itemize}[leftmargin=0in, label={}]
 \small{\item{
-\textbf{Languages} {: Java, Python, JavaScript, SQL, C\#}\vspace{2pt} \\
-\textbf{Frameworks} {: React, Spring, Flask}\vspace{2pt} \\
-\textbf{Cloud/Infra} {: AWS (Lambda, ECS, CloudFront), MongoDB, Postgres, Redis, Snowflake, Nginx, Barracuda}\vspace{2pt} \\
-\textbf{BI/Dashboarding} {: Tableau, QuickSight, RStudio/Posit, ThoughtSpot}\vspace{2pt} \\
-\textbf{Other} {: Auth0, New Relic}
+\textbf{Languages} {: Java, Python, SQL, C\#, JavaScript}\vspace{2pt} \\
+\textbf{Backend/Frameworks} {: Spring, Flask, RESTful APIs, multithreaded/concurrent systems}\vspace{2pt} \\
+\textbf{Data} {: Postgres, MongoDB, Redis, Snowflake}\vspace{2pt} \\
+\textbf{Cloud/Infra} {: AWS (Lambda, ECS, CloudFront), Docker, Nginx, Barracuda, CI pipelines}\vspace{2pt} \\
+\textbf{Other} {: Auth0, New Relic, React, Tableau/QuickSight}
 }}
 \end{itemize}
 
@@ -232,7 +241,7 @@
 %-----------EDUCATION-----------
 \section {EDUCATION}
 \resumeSubHeadingListStart
-\resumeItem{Computer Science --- Northern Illinois University}
+\resumeItem{Computer Science, Northern Illinois University}
 \resumeSubHeadingListEnd
 
 
