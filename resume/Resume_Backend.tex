@@ -106,7 +106,7 @@
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-        #1 & {\color{dark-grey}} \\
+        #1 & {\color{dark-grey}\small #2} \\
     \end{tabular*}\vspace{-4pt}
 }
 
@@ -159,12 +159,11 @@
 {Capital One}{Jun. 2022 -- Present $\cdot$ 4 yrs 4 mos}
 {Software Engineer}{Chicago, IL}
 \resumeItemListStart
-\resumeItem{Architected the migration of the Capital One Partner Portal (COPP) backend from a monolithic \textbf{ECS} service to a decoupled \textbf{CloudFront}/\textbf{ECS} architecture with zero user disruption; authored the technical design doc and secured buy-in across multiple levels of management}
-\resumeItem{Owned the backend architecture of COPP: a \textbf{Java}/\textbf{Spring} API and \textbf{Nginx} router on \textbf{ECS}, a \textbf{Redis} cache, and a \textbf{Postgres} database behind a \textbf{Barracuda} firewall, fully hosted on \textbf{AWS}, serving a \textbf{React} front end on \textbf{CloudFront}}
+\resumeItem{Architected the migration of the Capital One Partner Portal (COPP) backend from a monolithic \textbf{ECS} service to a decoupled \textbf{CloudFront}/\textbf{ECS} architecture (\textbf{Java}/\textbf{Spring} API, \textbf{Postgres}, \textbf{Redis} cache) with zero user disruption; authored the technical design doc and secured buy-in across multiple levels of management}
+\resumeItem{Onboarded and mentored 3 teammates onto the COPP codebase and architecture over the course of the role}
 \resumeItem{Designed and implemented \textbf{Auth0}-based authentication and authorization for partners, replacing legacy SSO, then re-architected the integration for a new micro front end}
 \resumeItem{Planned and led a lift-and-shift migration of the application and its data to a new \textbf{AWS} account, minimizing downtime and data-integrity risk}
-\resumeItem{Automated data-integrity validation with a scheduled \textbf{AWS Lambda} that checks upstream report generation and \textbf{Snowflake} table integrity}
-\resumeItem{Established an observability strategy with multiple \textbf{New Relic} synthetic monitors to proactively detect service outages, which have caught multiple real incidents}
+\resumeItem{Established an observability strategy with multiple \textbf{New Relic} synthetic monitors that detect service outages and alert the on-call rotation, catching multiple real incidents}
 \resumeItem{Partnered with the BI team to build a \textbf{REST API} layer on top of \textbf{QuickSight}, serving as the access-controlled entry point and gate for internal applications creating and updating \textbf{QuickSight} boards}
 \resumeItemListEnd
 
@@ -213,11 +212,12 @@
 \section{PROJECTS}
 \resumeSubHeadingListStart
 \resumeProjectHeading
-{\textbf{Custom Game Engine} (\textbf{C\#}, \textbf{MonoGame}, \textbf{HLSL}, \textbf{Vulkan})} {}
+{\textbf{Custom Game Engine} (\textbf{C\#}, \textbf{MonoGame}, \textbf{HLSL}, \textbf{Vulkan})} {Apr. 2024 -- Present}
 \resumeItemListStart
 \resumeItem{Architected and developed a custom 2D game engine, with an emphasis on modular systems architecture and \textbf{multithreaded} simulation}
 \resumeItem{Built real-time procedural mesh generation, evaluating \textbf{marching squares} as one approach}
 \resumeItem{Authored \textbf{HLSL} shaders and migrated the rendering pipeline from \textbf{DirectX} to \textbf{OpenGL} before adopting a \textbf{Vulkan} backend for cross-platform compatibility and maintainability}
+\resumeItem{Built a UI library that parses \textbf{HTML}/\textbf{CSS} into a tree of C\# UI elements, with a \textbf{React}-style component system and live data binding}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
