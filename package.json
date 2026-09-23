@@ -20,7 +20,7 @@
 	},
 	"scripts": {
 		"start": "react-scripts start",
-		"build": "react-scripts build && rm -rf ./docs/* &&  mv ./build/* docs && rm -rf ./build",
+		"build": "react-scripts build && rm -rf ./docs/* &&  mv ./build/* docs && rm -rf ./build && cp ./docs/index.html ./docs/404.html",
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"makeBetter": "npx prettier --write ."
