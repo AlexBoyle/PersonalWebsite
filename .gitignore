@@ -28,6 +28,8 @@ out/
 resume/*.md
 resume/*.log
 resume/*.pdf
+# private contact info for resumes (see resume/contact.example.tex)
+resume/contact.tex
 
 *.aux
 *.out

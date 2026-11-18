@@ -126,13 +126,18 @@
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+% Contact info: phone/email are NOT stored in this repo.
+% They come from resume/contact.tex, which is gitignored (see contact.example.tex).
+% Without contact.tex the resume builds with [PHONE]/[EMAIL] placeholders.
+\IfFileExists{contact.tex}{\input{contact.tex}}{\newcommand{\myphone}{[PHONE]}\newcommand{\myemail}{[EMAIL]}}
+
 \begin{document}
 
 %----------HEADING----------
 \begin{center}
 \textbf{\Huge Alex Boyle} \\ \vspace{5pt}
-\small \faPhone* \texttt{[PHONE]} \hspace{1pt} $|$
-\hspace{1pt} \faEnvelope \hspace{2pt} \texttt{[EMAIL]} \hspace{1pt} $|$
+\small \faPhone* \texttt{\myphone} \hspace{1pt} $|$
+\hspace{1pt} \faEnvelope \hspace{2pt} \texttt{\myemail} \hspace{1pt} $|$
 \hspace{1pt} \faLinkedin \hspace{2pt} \href{https://www.linkedin.com/in/-alexboyle/}{\myuline{-alexboyle}} \hspace{1pt} $|$
 \hspace{1pt} \faGithub \hspace{2pt} \href{https://github.com/AlexBoyle}{\myuline{AlexBoyle}} \hspace{1pt} $|$
 \hspace{1pt} \faMapMarker* \hspace{2pt}\texttt{Chicago, IL}
